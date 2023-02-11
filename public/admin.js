@@ -27,7 +27,7 @@ function renderBook(book) {
     let qtyInput = document.createElement("input")
     let saveBtn = document.createElement("button")   
 
-    listItem.innerHTML = `<strong>${book.titile}</strong>`
+    listItem.innerHTML = `<strong>${book.title}</strong>`
     //can also be changed to this
     // listItem.textContent = book.title
     qtyInput.setAttribute(`value`, `${book.quantity}`) //need to append this
