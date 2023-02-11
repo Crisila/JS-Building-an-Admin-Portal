@@ -2,9 +2,11 @@ async function main() {
 
     let response = await fetch('http://localhost:3001/listBooks')
     let books = await response.json()
-
+// Once the array of books is retrieved, we use .forEach to add cards for each book to the DOM.
     books.forEach(renderBook)
 }
+
+
 
 function renderBook(book) {
     let bookContainer = document.querySelector('.book-container')
